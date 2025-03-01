@@ -6,6 +6,11 @@
   <title>Christmas-Shop</title>
   <!-- style -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 </head>
 <body>
   <div class="main-wrapper">
@@ -13,16 +18,30 @@
       <section class="section-header">
         <div class="header-container">
           <div class="header-logo-container">
-            <img src="./assets/svg/snowflakeLogoHeader.svg" class="img-logo" alt="snow">
-            <p class="logo-title">THE GIFTS</p>
+            <a class="header-logo-container" href="index.html">
+              <img src="./assets/svg/snowflakeLogoHeader.svg" class="img-logo" alt="snow">
+              <h1 class="logo-title">THE GIFTS</h1>
+            </a>
           </div>
           <div class="header-nav-container">
             <nav class="header-nav-wrapper">
               <ul class="header-nav">
-                <li><a href="./indexGifts.html" class="site-nav-title active-bg">GIFTS</a></li>
+                <li><a href="./indexGifts.html" class="site-nav-title active-bg inactive">GIFTS</a></li>
                 <li><a href="#about" class="site-nav-title">ABOUT</a></li>
                 <li><a href="#best" class="site-nav-title">BEST</a></li>
-                <li><a href="#contacts" class="site-nav-title">CONTACTS</a></li>
+                <li><a href="#contact" class="site-nav-title">CONTACTS</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="hamburger-menu">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <nav class="menu-box">
+              <ul>
+                <li><a href="indexGifts.html" class="site-nav-title-hamburger">GIFTS</a></li>
+                <li><a href="index.html#about"class="site-nav-title-hamburger">ABOUT</a></li>
+                <li><a href="#best" class="site-nav-title-hamburger">BEST</a></li>
+                <li><a href="#contact" class="site-nav-title-hamburger">CONTACTS</a></li>
               </ul>
             </nav>
           </div>
@@ -34,125 +53,103 @@
         <section class="bg-garland">
           <div class="bg-garland-container">
             <div class="bg-garland-tetle-wrapper">
-              <p class="bg-garland-title">Achieve health,<br>harmony, and<br>inner strength</p>
+              <h2 class="bg-garland-title">Achieve health,<br>harmony, and<br>inner strength</h2>
             </div>
           </div>
           <div class="bg-garland-button-container">
-            <a href="#" class="garland-btn active">All</a>
-            <a href="#" class="garland-btn">for work</a>
-            <a href="#" class="garland-btn">for health</a>
-            <a href="#" class="garland-btn">for harmony</a>
+            <a href="#" class="garland-btn active" data-category="all">All</a>
+            <a href="#" class="garland-btn" data-category="For Work">for work</a>
+            <a href="#" class="garland-btn" data-category="For Health">for health</a>
+            <a href="#" class="garland-btn" data-category="For Harmony">for harmony</a>
           </div>
         </section>
         <section class="section-best-gifts-gifts">
           <div class="best-gifts-wrapper">
               <div class="card-wrapper-gifts">
                 <div class="card-container">
-                  <div class="image-container">
-                    <img src="./assets/img-compressed/gift-for-work.png" alt="gift">
+                  <div class="card-container">
+                    <img class="card-image" src="" alt="">
                     <div class="text-content">
-                      <span class="slider-text-tag">For work</span>
-                      <h2 class="slider-text-title">CONSOLE.LOG GURU</h2>
-                    </div> 
+                      <span class="slider-text-tag"></span>
+                      <h2 class="slider-text-title"></h2>
+                    </div>
                   </div>
                 </div>
                 <div class="card-container">
-                  <div class="image-container">
-                    <img src="./assets/img-compressed/gift-for-health.png" alt="gift">
-                    <div class="text-content">
-                      <span class="slider-text-tag slider-health-green">For health</span>
-                      <h2 class="slider-text-title slider-text-bot">step master</h2>
-                    </div> 
+                  <img class="card-image" src="" alt="">
+                  <div class="text-content">
+                    <span class="slider-text-tag"></span>
+                    <h2 class="slider-text-title"></h2>
                   </div>
                 </div>
                 <div class="card-container">
-                  <div class="image-container">
-                    <img src="./assets/img-compressed/gift-for-work.png" alt="gift">
-                    <div class="text-content">
-                      <span class="slider-text-tag">For work</span>
-                      <h2 class="slider-text-title slider-text-merge">bug magnet</h2>
-                    </div> 
+                  <img class="card-image" src="" alt="">
+                  <div class="text-content">
+                    <span class="slider-text-tag"></span>
+                    <h2 class="slider-text-title"></h2>
                   </div>
                 </div>
                 <div class="card-container">
-                  <div class="image-container">
-                    <img src="./assets/img-compressed/gift-for-work.png" alt="gift">
-                    <div class="text-content">
-                      <span class="slider-text-tag">For work</span>
-                      <h2 class="slider-text-title slider-text-merge">Shortcut Cheater</h2>
-                    </div> 
+                  <img class="card-image" src="" alt="">
+                  <div class="text-content">
+                    <span class="slider-text-tag"></span>
+                    <h2 class="slider-text-title"></h2>
                   </div>
                 </div>
                 <div class="card-container">
-                  <div class="image-container">
-                    <img src="./assets/img-compressed/gift-for-health.png" alt="gift">
-                    <div class="text-content">
-                      <span class="slider-text-tag slider-health-green">For health</span>
-                      <h2 class="slider-text-title slider-text-bot">Posture Levitation</h2>
-                    </div> 
+                  <img class="card-image" src="" alt="">
+                  <div class="text-content">
+                    <span class="slider-text-tag"></span>
+                    <h2 class="slider-text-title"></h2>
                   </div>
                 </div>
                 <div class="card-container">
-                  <div class="image-container">
-                    <img src="./assets/img-compressed/gift-for-harmony.png" alt="gift">
-                    <div class="text-content">
-                      <span class="slider-text-tag slider-health-pink">For harmony</span>
-                      <h2 class="slider-text-title slider-text-spontaneous">Bug Acceptance Guru</h2>
-                    </div> 
+                  <img class="card-image" src="" alt="">
+                  <div class="text-content">
+                    <span class="slider-text-tag"></span>
+                    <h2 class="slider-text-title"></h2>
                   </div>
                 </div>
                 <div class="card-container">
-                  <div class="image-container">
-                    <img src="./assets/img-compressed/gift-for-health.png" alt="gift">
-                    <div class="text-content">
-                      <span class="slider-text-tag slider-health-green">For health</span>
-                      <h2 class="slider-text-title slider-text-bot">Snack Resister</h2>
-                    </div> 
+                  <img class="card-image" src="" alt="">
+                  <div class="text-content">
+                    <span class="slider-text-tag"></span>
+                    <h2 class="slider-text-title"></h2>
                   </div>
                 </div>
                 <div class="card-container">
-                  <div class="image-container">
-                    <img src="./assets/img-compressed/gift-for-harmony.png" alt="gift">
-                    <div class="text-content">
-                      <span class="slider-text-tag slider-health-pink">For harmony</span>
-                      <h2 class="slider-text-title slider-text-spontaneous">Error Laugher</h2>
-                    </div> 
+                  <img class="card-image" src="" alt="">
+                  <div class="text-content">
+                    <span class="slider-text-tag"></span>
+                    <h2 class="slider-text-title"></h2>
                   </div>
                 </div>
-                <div class="card-container card-gift-container">
-                  <div class="image-container">
-                    <img src="./assets/img-compressed/gift-for-health.png" alt="gift">
-                    <div class="text-content">
-                      <span class="slider-text-tag slider-health-green">For health</span>
-                      <h2 class="slider-text-title slider-text-bot">Hydration Bot</h2>
-                    </div> 
+                <div class="card-container">
+                  <img class="card-image" src="" alt="">
+                  <div class="text-content">
+                    <span class="slider-text-tag"></span>
+                    <h2 class="slider-text-title"></h2>
                   </div>
                 </div>
-                <div class="card-container card-gift-container">
-                  <div class="image-container">
-                    <img src="./assets/img-compressed/gift-for-work.png" alt="gift">
-                    <div class="text-content">
-                      <span class="slider-text-tag">For work</span>
-                      <h2 class="slider-text-title slider-text-merge">Merge Master</h2>
-                    </div> 
+                <div class="card-container">
+                  <img class="card-image" src="" alt="">
+                  <div class="text-content">
+                    <span class="slider-text-tag"></span>
+                    <h2 class="slider-text-title"></h2>
                   </div>
                 </div>
-                <div class="card-container card-gift-container">
-                  <div class="image-container">
-                    <img src="./assets/img-compressed/gift-for-harmony.png" alt="gift">
-                    <div class="text-content">
-                      <span class="slider-text-tag slider-health-pink">For harmony</span>
-                      <h2 class="slider-text-title slider-text-spontaneous">Joy Charger</h2>
-                    </div> 
+                <div class="card-container">
+                  <img class="card-image" src="" alt="">
+                  <div class="text-content">
+                    <span class="slider-text-tag"></span>
+                    <h2 class="slider-text-title"></h2>
                   </div>
                 </div>
-                <div class="card-container card-gift-container">
-                  <div class="image-container">
-                    <img src="./assets/img-compressed/gift-for-harmony.png" alt="gift">
-                    <div class="text-content">
-                      <span class="slider-text-tag slider-health-pink">For harmony</span>
-                      <h2 class="slider-text-title slider-text-spontaneous">Spontaneous Coding Philosopher</h2>
-                    </div> 
+                <div class="card-container">
+                  <img class="card-image" src="" alt="">
+                  <div class="text-content">
+                    <span class="slider-text-tag"></span>
+                    <h2 class="slider-text-title"></h2>
                   </div>
                 </div>
               </div>
@@ -160,37 +157,46 @@
         </section>
       </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="footer-wrapper">
-        <div class="footer-gifts-container">
+        <div class="footer-container-gifts">
           <div class="footer-feedback">
-            <img src="./assets/svg/santa-claus.svg" class="footer-img" alt="santa-claus">
-            <p class="crismas-fit"><a href="tel:+375 (29) 111-22-33" class="phone-link">+375 (29) 111-22-33</a></p>
+            <a href="tel:+375291112233" class="phone-link">
+              <img src="./assets/svg/santa-claus.svg" class="footer-img" alt="Santa Claus">
+              <p class="crismas-fit">+375 (29) 111-22-33</p>
+            </a>
             <p class="crismas-subtitle-footer">Call Us</p>
           </div>
           <div class="footer-feedback">
-            <img src="./assets/svg/christmas-tree.svg" class="footer-img" alt="tree">
-            <p class="crismas-fit" alt="santa-claus">Magic forest</p>
-            <p class="crismas-subtitle-footer">meet us</p>
+            <a href="https://maps.google.com/?q=Magic+Forest" target="_blank" class="location-link">
+              <img src="./assets/svg/christmas-tree.svg" class="footer-img" alt="tree">
+              <p class="crismas-fit">Magic forest</p>
+            </a>
+            <p class="crismas-subtitle-footer">Meet Us</p>
           </div>
           <div class="footer-feedback">
-            <img src="./assets/svg/snake.svg" class="footer-img" alt="snake">
-            <p class="crismas-fit">gifts@magic.com</p>
-            <p class="crismas-subtitle-footer">write us</p>
+            <a href="mailto:gifts@magic.com" class="email-link">
+              <img src="./assets/svg/snake.svg" class="footer-img" alt="snake">
+              <p class="crismas-fit">gifts@magic.com</p>
+            </a>
+            <p class="crismas-subtitle-footer">Write Us</p>
           </div>
         </div>
         <div class="footer-social">
           <img src="./assets/img-compressed/telegram.png" alt="telegram">
           <img src="./assets/img-compressed/facebok.png" alt="facebook">
           <img src="./assets/img-compressed/instagram.png" alt="instagram">
-          <img src="./assets/img-compressed/Social Container.png" alt="x">
-        </div> 
+          <img src="./assets/img-compressed/Social-Container.png" alt="x">
+        </div>
         <div class="footer-social-copyright">
           <p class="footer-social-reserved">© Copyright 2025, All Rights Reserved</p>
-          <p class="footer-social-rs">Made in Rolling Scopes School</p>
+          <a href="https://rs.school" target="_blank" class="footer-social-rs">Made in Rolling Scopes School</a>
         </div>
       </div>
     </footer>
+    <div id="backToTop" class="back-to-top">
+      <img src="./assets/img-compressed/ButtonUP.png" alt="Back to Top">
+    </div>
   </div>
   <script src="main.js"></script>
 </body>
